@@ -14,7 +14,7 @@ class AccountsController < ApplicationController
     user = User.find_by_username(params[:form][:username])
     if user
       session[:user_id] = user.id
-      redirect_to :action => :index
+      redirect_to root_path
     else
       redirect_to root_path
     end
@@ -34,7 +34,7 @@ class AccountsController < ApplicationController
     user = user_type.users.new(params[:form])
     user.save!
     session[:user_id] = user.id
-    redirect_to :action => :index
+    redirect_to root_path
   end
 
   def destroy

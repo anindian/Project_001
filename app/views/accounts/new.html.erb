@@ -5,7 +5,7 @@
       and typesetting industry. Lorem Ipsum has been the indusstandard dummy
       text ever since the 1500s, when an unknown printer took a galley of
       type and scrambleto make a type specimen book.</p>
-    <%= form_for "user_form", :url => users_path, :html => {:method => :post} do %>
+    <%= form_for "user_form", :url => accounts_path, :html => {:method => :post} do %>
       <div id="bluebox" class="nice" style="margin-left: 80px;margin-top: 63px;margin-bottom:16px;">
 	<div class="corner"></div><div class="tag"></div>
 	<div class="text-with-tag"><strong>Fill out the information below to submit your property to our network of investors and their buyers</strong></div>
@@ -27,12 +27,12 @@
 	
 	<div class="form-row">
 	  <label for="phone">Password: <span style="color:red"> *</span></label>
-	  <input class="nice-field" name="form[password]" size="30" type="text">
+	  <input class="nice-field" name="form[password]" size="30" type="password">
 	</div>
 	
 	<div class="form-row">
 	  <label for="phone2">Contact Number: <span style="color:red"> *</span></label>
-	  <input class="nice-field" name="form[mobile_number]" size="30" type="text">
+	  <input class="nice-field" name="form[mobile_number]" size="30" type="password">
 	</div>
 	
 	<div class="form-row">
