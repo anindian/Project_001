@@ -2,7 +2,7 @@ Cschools::Application.routes.draw do
 
   root :to => "home#index"
 
-  resource :account, :only => :none do
+  resource :accounts do
     collection do
       post :login
       get :logout

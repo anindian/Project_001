@@ -97,7 +97,7 @@
     <h2 class="sidebar1">Join XXXXX</h2>
     <div class="text_box">
       <div class="login-title">Customer login</div>
-      <%= form_for "user_login", :url => login_account_path, :html => {:method => :post} do %>
+      <%= form_for "user_login", :url => login_accounts_path, :html => {:method => :post} do %>
       <div class="login_form_row">
         <label class="login_label">Username:</label><input type="text" name="form[username]" class="login_input">
       </div>      
@@ -107,7 +107,7 @@
       <input type="image" src="/images/login.gif" class="login">
       <% end %>
     </div>
-    <div class="signup-note">Don't have an account yet! &nbsp;&nbsp;<a href="/new">Signup</a></div>
+    <div class="signup-note">Don't have an account yet! &nbsp;&nbsp;<a href="<%= new_accounts_path%>">Signup</a></div>
   </div>
   <div class="contact">
     <h2 class="sidebar2">News Feed</h2>
